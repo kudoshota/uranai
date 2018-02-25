@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">kotlinuranai</string>
+    <string name="title_home">お前も今日からKotler</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="uranai">　</string>
+    <string name="uranau">占う</string>
+    <string name="str1">あなたの今日の運勢は</string>
+    <string name="str2">ラッキーカラーは</string>
+    <string name="luckycolor"> </string>
+</resources>

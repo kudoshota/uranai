@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marbl.kotlinuranai.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/message2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_home"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/kotlin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/android_kotlin"/>
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/fortune"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:showOutline="false"
+            app:roundedCorners="true"
+            app:bootstrapText="占う  {fa_heart} {fa_search}"/>
+        <Button
+            android:id="@+id/uranau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/uranau"/>
+        <TextView
+            android:id="@+id/str1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str1"/>
+        <TextView
+            android:id="@+id/uranai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/uranai"/>
+        <TextView
+            android:id="@+id/str2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str2"/>
+        <TextView
+            android:id="@+id/luckycolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/luckycolor"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
