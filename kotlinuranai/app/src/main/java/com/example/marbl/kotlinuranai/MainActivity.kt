@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         message2.setTypeface(Typeface.createFromAsset(getAssets(), "みかちゃん-P.ttf"))
         var button = findViewById<Button>(R.id.uranau)
 
-        button.setOnClickListener {
+        uranau.setOnClickListener {
             getFortune()
         }
 
@@ -36,6 +36,12 @@ class MainActivity : AppCompatActivity() {
         name2 = luckyColorList[index2]
 
         uranai.setText(name)
-        luckycolor.setText(name2)
+        when{
+            name == "大吉" -> luckycolor.setText("めげるな！")
+            name == "吉" -> luckycolor.setText("めげるな！!!!!!!")
+            name == "凶" -> luckycolor.setText("ahoaho！!!!!!!")
+            name == "大凶" -> luckycolor.setText("sssssss！!!!!!!")
+            else -> luckycolor.setText("めげるな！!!!!!")
+        }
     }
 }
